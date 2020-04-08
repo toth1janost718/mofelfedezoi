@@ -1,0 +1,93 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+      
+      #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        visibility: hidden;
+       
+        
+      }
+      
+      #myImg:hover {opacity: 0.7;}
+      
+      
+      .modal {
+        display: none; 
+        position: fixed;;
+        z-index: 1; 
+        padding-top: 30px;  
+        left: 25%;
+        top: 0;
+        width: 50%; 
+        height: 100%; 
+        overflow: auto;
+        
+       
+      
+      }
+      
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 700px;
+        
+        
+        
+      }
+      
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 90%;
+        max-width: 700px;
+        color:rgb(0, 108, 175);
+        padding: 10px 0;
+        height: 150px;
+        
+      }
+      
+     
+      .modal-content, #caption {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      
+      @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+      }
+      
+      @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+      }
+      
+      
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: black;
+        font-size: 10px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        cursor: pointer;
+      }
+      
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+        }
+      }
