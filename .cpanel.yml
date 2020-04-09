@@ -3,4 +3,4 @@ deployment:
       tasks:
         - export DEPLOYPATH=/home/magyaro3/public_html/    
         - /bin/cp * $DEPLOYPATH                          
-        
+        - /bin/cp -R * $DEPLOYPATH
