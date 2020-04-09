@@ -18,7 +18,7 @@ include_once 'head.php';
 				?>
 				<br>
 				<h2>
-					<p class="cim1"><b>Elnök:</b> <a href="mailto:morvai.richard@gmail.com"><u>Morvai Richárd</u></a></p>
+					<p class="cim1"><b>Elnök:</b> <a href="mailto:morvai.richard@gmail.com"><u>Morvai Ricsárd</u></a></p>
 				</h2>
 				<h3>
 					<p class="cim1">Táborral és táborhely bérlésével kapcsolatos információk: <a href="mailto:gyurkapajtas@citromail.hu"><u>Balázs György</u></a></p>
