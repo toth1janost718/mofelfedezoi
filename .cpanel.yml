@@ -1,0 +1,15 @@
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/magyaro3/public_html    v# Add /<app_folder> if required
+        - /bin/cp <index.php> $DEPLOYPATH                 #Copy specific file to destination from root
+  	- /bin/cp -R assets $DEPLOYPATH
+        - /bin/cp -R csapataink $DEPLOYPATH
+	 - /bin/cp -R errorPage $DEPLOYPATH
+ 	- /bin/cp -R gallery $DEPLOYPATH
+	 - /bin/cp -R images $DEPLOYPATH
+ 	- /bin/cp -R include $DEPLOYPATH
+ 	- /bin/cp -R mofelfedezoi $DEPLOYPATH
+ 	- /bin/cp -R news $DEPLOYPATH
+ 	- /bin/cp -R programs $DEPLOYPATH
+        - /bin cp * $DEPLOYPATH                           #copy all from root 
+        - /bin/cp -r * $DEPLOYPATH                        #copy all recursively to $DEPLOYPATH
