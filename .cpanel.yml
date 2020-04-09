@@ -1,7 +1,8 @@
 deployment:
       tasks:
         - export DEPLOYPATH=/home/magyaro3/public_html    # Add /<app_folder> if required
-        - /bin/cp index.php $DEPLOYPATH                 #Copy specific file to destination from root
+        - /bin/cp index.php $DEPLOYPATH
+	- /bin/cp index.html $DEPLOYPATH                   #Copy specific file to destination from root
   	- /bin/cp -a * $DEPLOYPATH
         - /bin cp * $DEPLOYPATH                           #copy all from root 
         - /bin/cp -r * $DEPLOYPATH                        #copy all recursively to $DEPLOYPATH
